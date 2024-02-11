@@ -1,0 +1,21 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import telebot\r\nfrom bot import MyTelegramBot\r\n\r\nif __name__ == \"__main__\":\r\n    bot = MyTelegramBot('TOKEN')\r\n    bot.run()\r\n\r\n
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	
++++ b/main.py	
+@@ -1,5 +1,4 @@
+-import telebot
+-from bot import MyTelegramBot
++from BotScripts.bot import MyTelegramBot
+ 
+ if __name__ == "__main__":
+     bot = MyTelegramBot('TOKEN')
+diff --git a/bot.py b/BotScripts/bot.py
+rename from bot.py
+rename to BotScripts/bot.py
+diff --git a/download_google.py b/TableScripts/download_google.py
+rename from download_google.py
+rename to TableScripts/download_google.py
