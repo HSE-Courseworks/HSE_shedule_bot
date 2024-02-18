@@ -1,7 +1,6 @@
-import telebot
-from bot import MyTelegramBot
+from BotScripts.bot import MyTelegramBot
 
 if __name__ == "__main__":
-    bot = MyTelegramBot('TOKEN')
+    bot = MyTelegramBot('token')
     bot.run()
 

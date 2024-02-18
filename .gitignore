@@ -1,10 +1,10 @@
-# Игнорировать файлы Python bytecode
+﻿# Игнорировать файлы Python bytecode
 *.pyc
 __pycache__/
 
 # Игнорировать файлы создаваемые IDE
 *.idea/
-.vscode/
+*.vscode/
 *.suo
 *.cache
 *.npy
