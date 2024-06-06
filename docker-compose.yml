@@ -7,6 +7,7 @@ services:
     volumes:
       - .:/app
       - /home/annermolina/Documents/schedule-401419-59d99eeeb42a.json:/app/schedule-401419-59d99eeeb42a.json
+
     depends_on:
       - database
 

@@ -27,5 +27,7 @@ telebot==0.0.5
 uritemplate==4.1.1
 urllib3==2.2.1
 psycopg2-binary==2.9.9
-
 pytest~=8.2.2
+
+
+
