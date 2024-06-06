@@ -1,0 +1,26 @@
+name: Check for main.py
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  check-main-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check for main.py
+        run: |
+          if [ ! -f main.py ]; then
+            echo "main.py not found"
+            exit 1
+          else
+            echo "main.py exists"
+          fi
